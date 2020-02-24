@@ -8,8 +8,9 @@
     </div>
     <div class="col-sm">
       Ola {{ usuario.funcionario.nome }}
-      <a href="{% url 'list_funcionarios' %}">Generenciar funcionarios</a>
-      <a href="{% url 'list_departamentos' %}">Generenciar departamentos</a>
+      <a href="{% url 'list_funcionarios' %}">Generenciar funcionarios</a><br>
+      <a href="{% url 'list_departamentos' %}">Generenciar departamentos</a><br>
+      <a href="{% url 'list_hora_extra' %}">Generenciar Banco de horas</a>
     </div>
     <div class="col-sm">
         <a href="{% url 'logout' %}">Logout</a>
