@@ -5,6 +5,7 @@ from apps.empresas.models import Empresa
 from django.urls import reverse
 from django.db.models import Sum
 
+
 class Funcionario(models.Model):
     nome = models.CharField(max_length=100)
     user = models.OneToOneField(User, on_delete=models.PROTECT)
@@ -23,4 +24,4 @@ class Funcionario(models.Model):
         return total or 0
 
     def __str__(self):	    
-        return self.nome	         
+        return self.nome
