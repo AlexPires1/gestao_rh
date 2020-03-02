@@ -110,3 +110,10 @@ CELERY_BROKER_URL = 'redis://localhost:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'alexpirespereira747@gmail.com'
+EMAIL_HOST_PASSWORD = 'arexpe12'
+EMAIL_PORT = 587
+EMAIL_USE_SSL = False
